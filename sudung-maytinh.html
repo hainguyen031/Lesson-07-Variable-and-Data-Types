@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+    <input type="number" id="so1" placeholder="Nhập số thứ nhất">
+    <input type="number" id="so2" placeholder="Nhập số thứ hai">
+    <button type="button" onclick="cong()">Cộng</button>
+    <button type="button" onclick="tru()">Trừ</button>
+    <button type="button" onclick="nhan()">Nhân</button>
+    <button type="button" onclick="chia()">Chia</button>
+    <p id="result"></p>
+
+    <script>
+                
+        function cong() {
+        var a= parseInt( document.getElementById("so1").value);
+        var b= parseInt(document.getElementById("so2").value);
+        var c= a + b;
+        document.getElementById("result").innerHTML=c
+    }
+        function tru() {
+        var a= parseInt( document.getElementById("so1").value);
+        var b= parseInt(document.getElementById("so2").value);
+        var c=a-b; 
+        document.getElementById("result").innerHTML=c
+    }
+        function nhan() {
+        var a= parseInt( document.getElementById("so1").value);
+        var b= parseInt(document.getElementById("so2").value);
+        var c=a*b; 
+        document.getElementById("result").innerHTML=c
+    }
+        function chia() {
+        var a= parseInt( document.getElementById("so1").value);
+        var b= parseInt(document.getElementById("so2").value);
+        var c=a/b; 
+        document.getElementById("result").innerHTML=c
+    }
+    </script>
+</body>
+</html>
