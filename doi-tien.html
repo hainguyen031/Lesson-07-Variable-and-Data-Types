@@ -38,17 +38,8 @@
             var a= document.getElementById("from").value;
             var b= document.getElementById("to").value;
             if (a==b) {
-                var c=f;
-            }
-            document.getElementById("result").innerHTML="Result:" +c ;
-        }
-        function changemoney() {
-            var f= document.getElementById("amount").value;
-            var a= document.getElementById("from").value;
-            var b= document.getElementById("to").value;
-            if (a==b) {
                 var c=f
-                document.getElementById("result").innerHTML="Result:" +c ;
+                document.getElementById("result").innerHTML="Result:" +c;
             } else {
                 if (a!=b && a=="VND") {
                 var c=f/23000;
